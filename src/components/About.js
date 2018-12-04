@@ -5,9 +5,25 @@ import { Container, Row, Col } from "reactstrap";
 import Slider from "./RentoSlider";
 import CountDown from "./CountDown";
 
-import "./About.css";
 
 class About extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      windowWidth: window.innerWidth
+    };
+  }
+  componentWillMount() {
+    window.addEventListener("resize", this.handleWindowWidth);
+  }
+  componentWillUnmount() {
+    window.addEventListener("resize", this.handleWindowWidth);
+  }
+
+  handleWindowWidth = () => {
+    this.setState({ windowWidth: window.innerWidth });
+  };
+
   render() {
     const textStyle = {
       fontSize: "1.5rem",
@@ -18,6 +34,7 @@ class About extends Component {
       marginTop: "10%",
       marginBottom: "5%"
     };
+    // console.log(this.state.windowWidth)
     return (
       <div>
         <Container style={containerStyle}>

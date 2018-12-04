@@ -7,7 +7,6 @@ import {
   CarouselCaption
 } from "reactstrap";
 
-import "./About.css";
 
 import image1 from "../assets/images/1.png";
 import image2 from "../assets/images/2.png";

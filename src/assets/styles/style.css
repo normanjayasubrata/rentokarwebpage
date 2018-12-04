@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "Caribbean Island";
+    src: url("../fonts/Caribbean_Island.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Walk Around the Block";
+    src: url("../fonts/Walk-Around-the-Block.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Westminster";
+    src: url("../fonts/WESTM.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .sales_text {
+    font-family: "Walk Around the Block";
+  }
+  
+  .carousel_text {
+    font-size: 2.5rem;
+    right: auto;
+    left: 10%;
+  }

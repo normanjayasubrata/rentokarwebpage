@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 import { Container, Row, Col } from "reactstrap";
 
-import Slider from "./RentoSlider";
+// import Slider from "./RentoSlider";
+import Slider from "./PromoteSlider";
 import CountDown from "./CountDown";
 
 

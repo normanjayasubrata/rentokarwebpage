@@ -3,7 +3,6 @@ import Navheader from "./components/NavHeader";
 import VideoTeaser from "./components/VideoTeaser";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import RentoSlider from "./components/RentoSlider";
 
 import "./assets/styles/style.css";
 
@@ -14,7 +13,6 @@ class App extends Component {
         <Navheader />
         <About />
         <VideoTeaser />
-        <RentoSlider />
         <Footer />
       </div>
     );

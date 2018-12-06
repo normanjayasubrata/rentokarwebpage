@@ -4,13 +4,20 @@ import Countdown from "react-countdown-now";
 
 export class CountDown extends Component {
   render() {
-
-
     const dueDate = new Date("2019-02-15");
     const counterStyle = {
       fontSize: "2rem",
       marginTop: "30%"
     };
+
+    const containerStyle = {
+      textAlign: "center"
+    }
+
+    const timeStyle = {
+      border: "solid black 1px"
+    };
+
     const renderer = ({
       total,
       days,
@@ -23,7 +30,7 @@ export class CountDown extends Component {
       return (
         <div>
           <Container>
-            <Row>
+            <Row style={timeStyle}>
               <Col>{days}</Col>
               <Col>{hours}</Col>
               <Col>{minutes}</Col>
@@ -39,9 +46,50 @@ export class CountDown extends Component {
         </div>
       );
     };
+
+    const rendererOption1 = ({ days, hours, minutes, seconds }) => {
+      return (
+        <Container style={containerStyle}>
+          <Row>
+            <Col>
+              <Row>
+                {days}
+              </Row>
+              <Row>
+                <h4>Days</h4>
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                {hours}
+              </Row>
+              <Row>
+                <h4>Hours</h4>
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                {minutes}
+              </Row>
+              <Row>
+                <h4>Minutes</h4>
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                {seconds}
+              </Row>
+              <Row>
+                <h4>Seconds</h4>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      );
+    };
     return (
       <div style={counterStyle}>
-        <Countdown date={dueDate} renderer={renderer} />
+        <Countdown date={dueDate} renderer={rendererOption1} />
       </div>
     );
   }

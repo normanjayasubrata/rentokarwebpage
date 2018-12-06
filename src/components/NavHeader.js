@@ -41,7 +41,11 @@ class NavHeader extends Component {
   render() {
     const navStyle = {
       paddingLeft: "10%",
-      paddingRight: "15%"
+      paddingRight: "15%",
+      // background: "grey",
+      height: "70px",
+      borderBottom: "solid black 1px",
+      transition: "linear 1s"
     };
 
     const homeStyle = {

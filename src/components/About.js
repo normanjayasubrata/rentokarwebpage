@@ -35,12 +35,18 @@ class About extends Component {
       marginTop: "10%",
       marginBottom: "5%"
     };
+
+    const promoteStyle = {
+      // padding: "20px"
+      margin: "20px"
+    }
+
     // console.log(this.state.windowWidth)
     return (
       <div>
         <Container style={containerStyle}>
           <Row>
-            <Col lg={6}>
+            <Col lg={6} style={promoteStyle}>
               <Row>
                 <p style={textStyle} className="font-italic">
                   Rentokar adalah aplikasi sewa menyewa model marketplace untuk

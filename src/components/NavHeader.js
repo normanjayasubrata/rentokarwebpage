@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 
 import rentoLogo from "../assets/images/rentokar_logo_min.jpeg";
-import rentokarBrand from "../assets/images/rentokar_logo_max_red.png"
+import rentokarBrand from "../assets/images/rentokar_logo_max_red.png";
 
 class NavHeader extends Component {
   constructor(props) {
@@ -33,11 +33,12 @@ class NavHeader extends Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
-  }
+  };
 
   handleWindowScroll = () => {
     this.setState({ windowScroll: window.scrollY });
   };
+
   render() {
     const navStyle = {
       paddingLeft: "10%",
@@ -45,7 +46,7 @@ class NavHeader extends Component {
       // background: "grey",
       height: "70px",
       borderBottom: "solid black 1px",
-      transition: "linear 1s"
+      transition: "linear 0.3s"
     };
 
     const homeStyle = {
@@ -55,42 +56,39 @@ class NavHeader extends Component {
     const brandStyle = {
       display: "block",
       margin: "0 auto",
-    }
-    console.log(this.state.windowScroll)
+      marginTop: "20%"
+    };
 
     const afterScroll = (
       <Navbar style={navStyle} color="white" light expand="md" fixed="top">
-          <NavbarBrand href="/">
-            <img src={rentoLogo} alt="rentokar logo" width="62" />
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem className="font-weight-bold">
-                <NavLink href="/components/">
-                  <h3 style={homeStyle}>RENTOKAR</h3>
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-    )
+        <NavbarBrand href="/">
+          <img src={rentoLogo} alt="rentokar logo" width="62" />
+        </NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem className="font-weight-bold">
+              <NavLink href="/components/">
+                <h3 style={homeStyle}>RENTOKAR</h3>
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    );
 
     const beforeScroll = (
       <Navbar>
-        <img style={brandStyle} src={rentokarBrand} alt="rentokar logo" width="492" />
+        <img
+          style={brandStyle}
+          src={rentokarBrand}
+          alt="rentokar logo"
+          width="50%"
+        />
       </Navbar>
-    )
+    );
     return (
-      <div>
-        {
-          this.state.windowScroll > 100 
-          ?
-          afterScroll
-          :
-          beforeScroll
-        }
-      </div>
+      <div>{this.state.windowScroll > 100? afterScroll : beforeScroll}</div>
     );
   }
 }

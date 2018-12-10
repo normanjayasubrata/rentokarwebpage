@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import Countdown from "react-countdown-now";
 
 export class CountDown extends Component {
@@ -12,7 +12,7 @@ export class CountDown extends Component {
 
     const containerStyle = {
       alignItems: "center"
-    }
+    };
 
     // const timeStyle = {
     //   border: "solid black 1px"
@@ -56,7 +56,7 @@ export class CountDown extends Component {
       margin: "0 auto",
       marginBottom: "20%",
       padding: "5px"
-    }
+    };
 
     const lowerStyle = {
       border: "solid red 1px",
@@ -69,42 +69,42 @@ export class CountDown extends Component {
       margin: "0 auto",
       marginBottom: "10%",
       padding: "5px"
-    }
+    };
 
     const rendererOption1 = ({ days, hours, minutes, seconds }) => {
       return (
         <Container style={containerStyle}>
           <Row>
-            <Col xs={3}>
+            <Col>
               <Row style={upperStyle}>
-                {days}
+                <Button color="danger" disabled>{days}</Button>
               </Row>
               <Row style={lowerStyle}>
-                <p>Days</p>
+                <Button outline color="danger" disabled>Days</Button>
               </Row>
             </Col>
-            <Col xs={3}>
+            <Col>
               <Row style={upperStyle}>
-                {hours}
+                <Button color="danger" disabled>{hours}</Button>
               </Row>
               <Row style={lowerStyle}>
-                <p>Hours</p>
+                <Button outline color="danger" disabled>Hours</Button>
               </Row>
             </Col>
-            <Col xs={3}>
+            <Col>
               <Row style={upperStyle}>
-                {minutes}
+                <Button color="danger" disabled>{minutes}</Button>
               </Row>
               <Row style={lowerStyle}>
-                <p>Minutes</p>
+                <Button outline color="danger" disabled>Minutes</Button>
               </Row>
             </Col>
-            <Col xs={3}>
+            <Col>
               <Row style={upperStyle}>
-                {seconds}
+                <Button color="danger" disabled>{seconds}</Button>
               </Row>
               <Row style={lowerStyle}>
-                <p>Seconds</p>
+                <Button outline color="danger" disabled>Seconds</Button>
               </Row>
             </Col>
           </Row>

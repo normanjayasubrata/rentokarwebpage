@@ -68,7 +68,7 @@ class NavHeader extends Component {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="font-weight-bold">
-              <NavLink href="/components/">
+              <NavLink href="https://normanjayasubrata.github.io/rentokarwebpage/">
                 <h3 style={homeStyle}>RENTOKAR</h3>
               </NavLink>
             </NavItem>

@@ -49,41 +49,26 @@ export class CountDown extends Component {
 
     const upperStyle = {
       border: "solid grey 1px",
-      borderRadius: "10px",
+      borderTopLeftRadius: "10px",
+      borderTopRightRadius: "10px",
       background: "grey",
       color: "white",
-      // textAlign: "center",
-      margin: "10 auto",
-      // marginBottom: "20%",
-      padding: "5px",
-      // position: "absolute" /*it can be fixed too*/,
-      // left: "0",
-      // right: "0",
-      // top: "0",
-      // bottom: "0",
-      // maxWidth:"100%",
-      // minWidth: "10%",
-      // maxHeight:"100%",
-      // overflow:"auto",
-      // position: "sticky"
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
     };
 
     const lowerStyle = {
       border: "solid red 1px",
-      borderRadius: "10px",
+      borderBottomLeftRadius: "10px",
+      borderBottomRightRadius: "10px",
       background: "red",
       color: "white",
-      // textAlign: "center",
-      // alignItems: "center",
-      // fontSize: "1rem",
-      margin: "10 auto",
-      // marginBottom: "10%",
-      padding: "5px",
-      // overflow:"auto",
-      // maxWidth:"100%",
-      // minWidth: "10%",
-      // position: "sticky"
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
     };
+    
 
     const rendererOption1 = ({ days, hours, minutes, seconds }) => {
       return (

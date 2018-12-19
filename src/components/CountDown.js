@@ -56,6 +56,8 @@ export class CountDown extends Component {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
+      marginRight: "10px",
+      width: "150%"
     };
 
     const lowerStyle = {
@@ -66,7 +68,10 @@ export class CountDown extends Component {
       color: "white",
       flex: 1,
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      marginRight: "10px",
+      width: "150%",
+      fontSize: "1rem"
     };
     
 
@@ -74,7 +79,7 @@ export class CountDown extends Component {
       return (
         <Container style={containerStyle}>
           <Row>
-            <Col xs="3" size="auto">
+            <Col xs="6" md="3">
               <Row style={upperStyle}>
                 {/* <Button color="danger" disabled> */}
                   {days}
@@ -86,7 +91,7 @@ export class CountDown extends Component {
                 {/* </Button> */}
               </Row>
             </Col>
-            <Col xs="3" size="auto">
+            <Col xs="6" md="3">
               <Row style={upperStyle}>
                 {/* <Button color="danger" disabled> */}
                   {hours}
@@ -98,7 +103,7 @@ export class CountDown extends Component {
                 {/* </Button> */}
               </Row>
             </Col>
-            <Col xs="3" size="auto">
+            <Col xs="6" md="3">
               <Row style={upperStyle}>
                 {/* <Button color="danger" disabled> */}
                   {minutes}
@@ -110,7 +115,7 @@ export class CountDown extends Component {
                 {/* </Button> */}
               </Row>
             </Col>
-            <Col xs="3" size="auto">
+            <Col xs="6" md="3">
               <Row style={upperStyle}>
                 {/* <Button color="danger" disabled> */}
                   {seconds}

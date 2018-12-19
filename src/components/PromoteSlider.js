@@ -8,6 +8,14 @@ import image3 from "../assets/images/3.png";
 
 class PromoteSlider extends Component {
   render() {
+    const legendStyle = {
+      fontSize: "1rem",
+      color: "white",
+      fontStyle: "bold",
+      opacity: "1",
+      // zIndex: "-1"
+      background: "rgba(0, 0, 0, 0.5)"
+    }
     return (
       <div>
         <Carousel 
@@ -18,15 +26,15 @@ class PromoteSlider extends Component {
         >
           <div>
             <img src={image1} alt="image1" />
-            <p className="legend">Temukan barang uang ingin kamu sewa</p>
+            <p className="legend" style={legendStyle}>Temukan barang uang ingin kamu sewa</p>
           </div>
           <div>
             <img src={image2} alt="image2" />
-            <p className="legend">Sewa barang yang kamu inginkan</p>
+            <p className="legend" style={legendStyle}>Sewa barang yang kamu inginkan</p>
           </div>
           <div>
             <img src={image3} alt="image3" />
-            <p className="legend">Kembalikan barang yang kamu sewa tepat waktu</p>
+            <p className="legend" style={legendStyle}>Kembalikan barang yang kamu sewa tepat waktu</p>
           </div>
         </Carousel>
       </div>

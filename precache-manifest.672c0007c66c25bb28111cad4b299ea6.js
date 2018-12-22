@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/rentokarwebpage/static/media/rentokar_logo_max_white.a7d8fbab.png"
   },
   {
-    "revision": "ab039a1e023e42fb1dca",
+    "revision": "f91bc666956afc568094",
     "url": "/rentokarwebpage/static/css/main.950a5b2e.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/rentokarwebpage/static/media/teaser_rentokar.df7beebc.mp4"
   },
   {
-    "revision": "ab039a1e023e42fb1dca",
-    "url": "/rentokarwebpage/static/js/main.ab039a1e.chunk.js"
+    "revision": "f91bc666956afc568094",
+    "url": "/rentokarwebpage/static/js/main.f91bc666.chunk.js"
   },
   {
     "revision": "c07bd8b0df81e6968d06be7664988714",
@@ -52,19 +52,19 @@ self.__precacheManifest = [
     "url": "/rentokarwebpage/static/media/Montserrat-Regular.91696e09.otf"
   },
   {
-    "revision": "3d3b19e05aadde4607b694752db4721e",
-    "url": "/rentokarwebpage/static/media/Walk-Around-the-Block.3d3b19e0.woff"
-  },
-  {
     "revision": "23488ea418c65221be37685c5c2da67a",
     "url": "/rentokarwebpage/static/media/Caribbean_Island.23488ea4.woff"
+  },
+  {
+    "revision": "3d3b19e05aadde4607b694752db4721e",
+    "url": "/rentokarwebpage/static/media/Walk-Around-the-Block.3d3b19e0.woff"
   },
   {
     "revision": "370423a82ae5cfde41c7",
     "url": "/rentokarwebpage/static/css/1.ee3990ca.chunk.css"
   },
   {
-    "revision": "73e9837106b8b84c76508a899a91a8d6",
+    "revision": "ccfb0693a1a2a8f701d46e13eebb5161",
     "url": "/rentokarwebpage/index.html"
   }
 ];

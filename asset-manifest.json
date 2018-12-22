@@ -1,7 +1,7 @@
 {
   "main.css": "/rentokarwebpage/static/css/main.950a5b2e.chunk.css",
-  "main.js": "/rentokarwebpage/static/js/main.ab039a1e.chunk.js",
-  "main.js.map": "/rentokarwebpage/static/js/main.ab039a1e.chunk.js.map",
+  "main.js": "/rentokarwebpage/static/js/main.f91bc666.chunk.js",
+  "main.js.map": "/rentokarwebpage/static/js/main.f91bc666.chunk.js.map",
   "static/css/1.ee3990ca.chunk.css": "/rentokarwebpage/static/css/1.ee3990ca.chunk.css",
   "static/js/1.370423a8.chunk.js": "/rentokarwebpage/static/js/1.370423a8.chunk.js",
   "static/js/1.370423a8.chunk.js.map": "/rentokarwebpage/static/js/1.370423a8.chunk.js.map",
@@ -18,6 +18,6 @@
   "static/css/main.950a5b2e.chunk.css.map": "/rentokarwebpage/static/css/main.950a5b2e.chunk.css.map",
   "static/css/1.ee3990ca.chunk.css.map": "/rentokarwebpage/static/css/1.ee3990ca.chunk.css.map",
   "index.html": "/rentokarwebpage/index.html",
-  "precache-manifest.61830688b34e98edc3e840d23ea6afdf.js": "/rentokarwebpage/precache-manifest.61830688b34e98edc3e840d23ea6afdf.js",
+  "precache-manifest.672c0007c66c25bb28111cad4b299ea6.js": "/rentokarwebpage/precache-manifest.672c0007c66c25bb28111cad4b299ea6.js",
   "service-worker.js": "/rentokarwebpage/service-worker.js"
 }

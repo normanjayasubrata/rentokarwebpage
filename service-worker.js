@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rentokarwebpage/precache-manifest.61830688b34e98edc3e840d23ea6afdf.js"
+  "/rentokarwebpage/precache-manifest.672c0007c66c25bb28111cad4b299ea6.js"
 );
 
 workbox.clientsClaim();
